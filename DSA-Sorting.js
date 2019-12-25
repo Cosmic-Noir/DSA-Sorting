@@ -490,3 +490,25 @@ const shuffle = arr => {
 // console.log(shuffle(testArray2));
 
 // Sorting Books
+const titles = [
+  "Jill Jogs",
+  "cat Walkers",
+  "abe is president",
+  "Darien Does Deeds",
+  "Brian WINS!",
+  "Jules Revenge"
+];
+
+titles.sort(function(a, b) {
+  a = a.toLowerCase();
+  b = b.toLowerCase();
+  if (a < b) {
+    return -1;
+  }
+  if (a > b) {
+    return 1;
+  }
+  return 0;
+});
+
+console.log(titles);
